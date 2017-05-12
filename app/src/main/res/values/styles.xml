@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorButtonNormal">#C8E6C9</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+<style name="RelativeLayoutRoot">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:background">@drawable/lacrosse</item>
+</style>
+    <style name="LinearLayoutTimer">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_below">@id/timer_tittle</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LinearLayoutGoal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_below">@id/timer</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LinearLayoutTeamAB">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="LinearLayoutPenality">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_below">@id/penality_tittle</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="TextViewLaxTittle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:text">@string/LaxGameTimer</item>
+        <item name="android:textSize">@dimen/textTittle</item>
+        <item name="android:textColor">@color/textColorTittle</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextViewTeamA">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/paddingTeam</item>
+        <item name="android:layout_marginTop">@dimen/margingTeam</item>
+        <item name="android:layout_marginBottom">@dimen/margingTeam</item>
+        <item name="android:text">@string/teamA</item>
+        <item name="android:textSize">@dimen/textTittle</item>
+        <item name="android:textColor">@color/textColorTittle</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextViewTeamB">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/paddingTeam</item>
+        <item name="android:layout_marginTop">@dimen/margingTeam</item>
+        <item name="android:layout_marginBottom">@dimen/margingTeam</item>
+        <item name="android:text">@string/teamB</item>
+        <item name="android:textSize">@dimen/textTittle</item>
+        <item name="android:textColor">@color/textColorTittle</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextViewScore">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/paddingTeam</item>
+        <item name="android:text">@string/score</item>
+        <item name="android:textSize">@dimen/textScore</item>
+        <item name="android:textColor">@color/textColorScore</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="TextViewPlayerTittle">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_below">@id/reset_score</item>
+    <item name="android:layout_centerHorizontal">true</item>
+    <item name="android:padding">@dimen/padding</item>
+    <item name="android:text">@string/PlayerPenality</item>
+    <item name="android:textSize">@dimen/textTittle</item>
+    <item name="android:textColor">@color/textColorTittle</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="startBotton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margingButton</item>
+        <item name="android:text">@string/startButton</item>
+    </style>
+    <style name="pauseBotton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margingButton</item>
+        <item name="android:text">@string/pauseButton</item>
+    </style>
+    <style name="resetBotton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">@string/resetButton</item>
+    </style>
+    <style name="goalBotton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margingGoal</item>
+        <item name="android:layout_marginRight">@dimen/margingGoal</item>
+        <item name="android:text">@string/goalButton</item>
+    </style>
+    <style name="resetGoalBotton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/goals</item>
+        <item name="android:text">@string/resetButton</item>
+    </style>
+    <style name="startpenalityBotton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margingGoal</item>
+        <item name="android:layout_marginRight">@dimen/margingGoal</item>
+        <item name="android:text">@string/startButton</item>
+    </style>
+    <style name="resetpenalityBotton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margingGoal</item>
+        <item name="android:layout_marginRight">@dimen/margingGoal</item>
+        <item name="android:layout_marginBottom">@dimen/margingGoal</item>
+        <item name="android:text">@string/resetButton</item>
+    </style>
+    <style name="gameChrono">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margingButton</item>
+        <item name="android:textColor">@color/textColorScore</item>
+        <item name="android:textSize">@dimen/textTittle</item>
+    </style>
+    <style name="teamABChrono">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/textColorScore</item>
+        <item name="android:textSize">@dimen/textTittle</item>
+    </style>
+
+</resources>

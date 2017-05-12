@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Score Keeper App</string>
+    <string name="LaxGameTimer">Lacrosse game timer</string>
+    <string name="PlayerPenality">Player penality timer</string>
+    <string name="startButton">start</string>
+    <string name="pauseButton">pause</string>
+    <string name="resetButton">reset</string>
+    <string name="goalButton">goal</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="score">0</string>
+</resources>

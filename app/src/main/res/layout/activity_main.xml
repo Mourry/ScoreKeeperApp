@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeLayoutRoot"
+    tools:context="com.example.android.scorekeeperapp.MainActivity">
+
+    <TextView
+        android:id="@+id/timer_tittle"
+        style="@style/TextViewLaxTittle"/>
+
+    <LinearLayout
+        android:id="@+id/timer"
+        style="@style/LinearLayoutTimer">
+
+        <Button
+            android:id="@+id/startButton"
+            style="@style/startBotton"/>
+
+        <Chronometer
+            android:id="@+id/gametimer"
+            style="@style/gameChrono"/>
+
+        <Button
+            android:id="@+id/pauseButton"
+            style="@style/pauseBotton"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            style="@style/resetBotton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goals"
+        style="@style/LinearLayoutGoal">
+
+        <LinearLayout
+            android:id="@+id/LLTeamA"
+            style="@style/LinearLayoutTeamAB">
+
+            <TextView
+                android:id="@+id/TeamA"
+                style="@style/TextViewTeamA"/>
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/TextViewScore"/>
+
+            <Button
+                android:id="@+id/goalTeamA"
+                android:onClick="addOneForTeamA"
+                style="@style/goalBotton"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLTeamB"
+            style="@style/LinearLayoutTeamAB">
+
+            <TextView
+                android:id="@+id/TeamB"
+                style="@style/TextViewTeamB"/>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/TextViewScore"/>
+
+            <Button
+                android:id="@+id/goalTeamB"
+                android:onClick="addOneForTeamB"
+                style="@style/goalBotton"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_score"
+        android:onClick="resetScore"
+        style="@style/resetGoalBotton"/>
+
+    <TextView
+        android:id="@+id/penality_tittle"
+        style="@style/TextViewPlayerTittle"/>
+
+    <LinearLayout
+        android:id="@+id/penality"
+        style="@style/LinearLayoutPenality">
+
+        <LinearLayout
+            android:id="@+id/LLPTeamA"
+            style="@style/LinearLayoutTeamAB">
+
+            <TextView
+                android:id="@+id/penalityTeamATittle"
+                style="@style/TextViewTeamA"/>
+
+            <Chronometer
+                android:id="@+id/penalityTeamA"
+                style="@style/teamABChrono"/>
+
+            <Button
+                android:id="@+id/startAButton"
+                style="@style/startpenalityBotton"/>
+
+            <Button
+                android:id="@+id/resetAButton"
+                style="@style/resetpenalityBotton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLPTeamB"
+            style="@style/LinearLayoutTeamAB">
+
+            <TextView
+                android:id="@+id/penalityTeamBTittle"
+                style="@style/TextViewTeamB"/>
+
+            <Chronometer
+                android:id="@+id/penalityTeamB"
+                style="@style/teamABChrono"/>
+
+            <Button
+                android:id="@+id/startBButton"
+                style="@style/startpenalityBotton"/>
+
+            <Button
+                android:id="@+id/resetBButton"
+                style="@style/resetpenalityBotton"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

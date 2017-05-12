@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="paddingTeam">4dp</dimen>
+    <dimen name="margingTeam">8dp</dimen>
+    <dimen name="margingButton">16dp</dimen>
+    <dimen name="margingGoal">24dp</dimen>
+    <dimen name="textTittle">18sp</dimen>
+    <dimen name="textScore">50sp</dimen>
+
+</resources>
